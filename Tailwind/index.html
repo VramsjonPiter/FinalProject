@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-cover shadow-md fixed top-0 left-0 right-0">
+        <div class="flex sm:flex-row md:flex-row bg-cyan-500 py-2">
+            <span class="text-white font-bold mx-5">follow us</span>
+            <span><img class="w-5 mr-2" src="image/fac.png" alt=""></span>
+            <span><img class="w-5 mr-2" src="image/twit.png" alt=""></span>
+            <span><img class="w-5 mr-2" src="image/ig.png" alt=""></span>
+            <span><img class="w-5 mr-2" src="image/in.png" alt=""></span>
+            <span><img class="w-5 mr-2" src="image/yt.png" alt=""></span>
+            <span><img class="w-5 mr-2" src="image/tik2.png" alt=""></span>
+        </div>
+        <nav class="flex bg-white px-20">
+            <div class="flex">
+                <img class="w-28 h-[60px]" src="image/biofarma.png" alt="">
+                <img class="w-[60px] h-[60px]" src="image/biofarma2.png" alt="">
+            </div>
+            <div class="mx-[130px] text-slate-600">
+                <div class="lg:hidden">
+                    <!-- Mobile Menu Toggle Button -->
+                    <button id="menuToggle" class="text-xl focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            
+                <ul id="menu" class="hidden lg:flex list-none items-center py-5 font-bold">
+                    <li class="mr-6"><a href="biodata.html">Biodata</a></li>
+                    <li class="mr-6"><a href="contactus.html">Contact Us</a></li>
+                    <li class="mr-6"><a href="#">WiseWord</a></li>
+                    <li class="mr-6"><a href="https://fti.unai.edu/"> FTI UNAI</a></li>
+                    <li><a href="https://unai.edu/">UNAI</a></li>
+                </ul>
+            
+                <script>
+                    // JavaScript to handle the toggle functionality
+                    const menuToggle = document.getElementById('menuToggle');
+                    const menu = document.getElementById('menu');
+            
+                    menuToggle.addEventListener('click', () => {
+                        menu.classList.toggle('hidden');
+                    });
+                </script>
+            </div>
+            <!-- <div class="mx-[130px] text-slate-600">
+                <ul class="flex list-none items-center py-5 font-bold">
+                    <li class="mr-6"><a href="#">Biodata</a></li>
+                    <li class="mr-6"><a href="#">Contact Us</a></li>
+                    <li class="mr-6"><a href="#">WiseWord</a></li>
+                    <li class="mr-6"><a href="https://fti.unai.edu/"> FTI UNAI</a></li>
+                    <li><a href="https://unai.edu/">UNAI</a></li>
+                </ul>
+            </div> -->
+        </nav>
+    </header>
+    <main class="pt-[105px] ">
+        <div class="w-[100%] flex flex-col md:flex-row">
+            <img class="w-[100%]" src="image/bio.png" alt="">
+        </div>
+        <div class="text-center my-16">
+            <h2 class="text-cyan-500 text-4xl font-sans font-medium">Produk & Layanan</h2>
+            <p class="text-slate-500">
+                Setiap produk yang kami produksi telah melalui tahapan penelitian yang dilakukan oleh para ilmuwan berpengalaman, <br> untuk memastikan keamanan, kualitas, dan khasiatnya, yang sesuai dengan Good Manufacturing Practices (GMP) yang <br> telah ditetapkan oleh regulator sejak proses penelitian, produksi hingga distribusi.
+            </p>
+        </div>
+        <div class="flex justify-around mx-4 flex-col md:flex-row">
+            <div class="min-w-[30%] sm:w-auto shadow-md text-slate-500 p-8 border-t-8 border-orange-600 rounded-lg">
+                <img class="w-32" src="image/life sciences.png" alt="">
+                <h3 class="text-black text-[22px] font-medium text-slate-700 my-7">Life Sciences</h3>
+                <a class="text-blue-500 font-medium" href="#">Selengkapnya >></a>
+            </div>
+            <div class="min-w-[30%] shadow-md text-slate-500 p-8 border-t-8 border-yellow-500 rounded-lg">
+                <img class="w-32" src="image/penyediaan jasa.png" alt="">
+                <h3 class="text-black text-[22px] font-medium text-slate-700 my-7">Penyediaan Jasa & Produk Layanan Kesehatan</h3>
+                <a class="text-blue-500 font-medium" href="#">Selengkapnya >></a>
+            </div>
+            <div class="min-w-[30%] shadow-md text-slate-500 p-8 border-t-8 border-blue-950 rounded-lg">
+                <img class="w-32" src="image/perdagangan.png" alt="">
+                <h3 class="text-black text-[22px] font-medium text-slate-700 my-7">Perdagangan, Distribusi Obat & Alat kesehatan</h3>
+                <a class="text-blue-500 font-medium" href="#">Selengkapnya >></a>
+            </div>
+        </div>
+        
+        <!-- <div class="flex justify-around mx-20">
+            <div class="min-w-[30%] shadow-md text-slate-500 p-8 border-t-8 border-orange-600 rounded-lg">
+                <img class="w-32" src="image/life sciences.png" alt="">
+                <h3 class="text-black text-[22px] font-medium text-slate-700 my-7">Life Sciences</h3>
+                <a class="text-blue-500 font-medium" href="#">Selengkapnya >></a>
+            </div>
+            <div class="min-w-[30%] shadow-md text-slate-500 p-8 border-t-8 border-yellow-500 rounded-lg">
+                <img class="w-32" src="image/penyediaan jasa.png" alt="">
+                <h3 class="text-black text-[22px] font-medium text-slate-700 my-7">Penyediaan Jasa & Produk Layanan Kesehatan</h3>
+                <a class="text-blue-500 font-medium" href="#">Selengkapnya >></a>
+            </div>
+            <div class="min-w-[30%] shadow-md text-slate-500 p-8 border-t-8 border-blue-950 rounded-lg">
+                <img class="w-32" src="image/perdagangan.png" alt="">
+                <h3 class="text-black text-[22px] font-medium text-slate-700 my-7">Perdagangan, Distribusi Obat & Alat kesehatan</h3>
+                <a class="text-blue-500 font-medium" href="#">Selengkapnya >></a>
+            </div>
+        </div>
+        <div>
+            <div class="flex flex-col sm:flex-col md:flex-row mx-[95px] justify-between mt-32">
+                <h1 class="text-cyan-500 font-medium text-4xl">News & Event</h1>
+                <button class="bg-cyan-500 text-white rounded-md px-10">Selengkapnya</button>
+            </div> -->
+            <div class="flex flex-col md:flex-row justify-around my-20">
+                <div class="min-w-[20%]">
+                    <img class="w-[100%] rounded-xl" src="https://www.biofarma.co.id/media/image/thumbs/post/2023/11/29/whatsapp-image-2023-11-27-at-162011-400-250_thumb.jpeg" alt="">
+                    <a class="text-gray-600 font-medium text-xl" href="#">Penuhi Kebutuhan Antisera, Bio Farma dan...
+                        <p class="text-base font-normal my-5">Bio Farma dan Thai Red Cross Society by Queen Saovabha Memorial Institute (QSMI) Telah...</p> 
+                        <span class="text-cyan-500 text-base">Selengkapnya >></span>
+                    </a>
+                </div>
+                <div class="min-w-[20%]">
+                    <img class="w-[100%] rounded-xl" src="https://www.biofarma.co.id/media/image/thumbs/post/2023/11/21/mou-bg-bd-2-400-250_thumb.jpg" alt="">
+                    <a class="text-gray-600 font-medium text-xl" href="#">BD dan Bio Faarma Berkolaborasi Untuk...
+                        <p class="text-base font-normal my-5">WASHINGTON, D.C., Amerika Serikat, 20 November 2023 - BD (Becton Dickinson and Company...</p> 
+                        <span class="text-cyan-500 text-base">Selengkapnya >></span>
+                    </a>
+                </div>
+                <div class="min-w-[20%]">
+                    <img class="w-[100%] rounded-xl" src="https://www.biofarma.co.id/media/image/thumbs/post/2023/11/21/img_9627-400-250_thumb.jpg" alt="">
+                    <a class="text-gray-600 font-medium text-xl" href="#">Eric Thohir Dorong Gen Z Yogyakarta untuk...
+                        <P class="text-base font-normal my-5">Mentri BUMN, Erick Thojir menekankan pentingnya kontribusi generasi muda untuk...</P> 
+                        <span class="text-cyan-500 text-base">Selengkapnya >></span>
+                    </a>
+                </div>
+                <div class="min-w-[20%]">
+                    <img class="w-[100%] rounded-xl" src="https://www.biofarma.co.id/media/image/thumbs/post/2023/11/17/mak09939-400-250_thumb.JPG" alt="">
+                    <a class="text-gray-600 font-medium text-xl" href="#"> Tingkatkan Kesadaran Pencegahan Penyakit...
+                        <p class="text-base font-normal my-5">Bio Farma memperingati Hari Kesehatan Nasional ke 59 bersama Dinas Kesehatan Kota...</p> 
+                        <span class="text-cyan-500 text-base">Selengkapnya >></span> 
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-cyan-500">
+            <div class="flex justify-between mx-20 text-white py-[50px]">
+                <h1 class="text-3xl font-medium">Video</h1>
+                <a class="bg-white rounded px-10 text-black" href="#"><button class="pt-1">Selengkapnya</button></a>
+            </div>
+            <div class="flex flex-col sm:flex-col md:flex-row justify-around">
+                <div>
+                    <iframe class="rounded-xl" src="https://www.youtube.com/embed/9BuO1fb0xzs" frameborder="0"></iframe>
+                    <h3 class="text-white mt-10 mb-20">UI CISE Expo 2023 Bio Farma <br> Group </h3>
+                </div>
+                <div>
+                    <iframe class="rounded-lg" src="https://www.youtube.com/embed/EMR0KNkPVT0" frameborder="0"></iframe>
+                    <h3 class="text-white mt-10 mb-20">Cerita Keluarga Penyintas Kanker <br> Payudara</h3>
+                </div>
+                <div>
+                    <iframe class="rounded-lg" src="https://www.youtube.com/embed/dWSocWw64IE" frameborder="0"></iframe>
+                    <h3 class="text-white mt-10 mb 20">Mitra Binaan Bio Farma Ikutin <br> INACRAFT 2023</h3>
+                </div>
+                <div>
+                    <iframe class="rounded-lg" src="https://www.youtube.com/embed/CjfESJyaxFo" frameborder="0"></iframe>
+                    <h3 class="text-white mt-10 mb-20">Intip Serunya Perjalanan Botol <br> Plastik</h3>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col-reverse md:flex-row justify-around mt-20" style="background-image: url('https://www.biofarma.co.id/bundle/default/images/media/bg-career-homepage.png');">
+            <div class="mr-5 w-[35%]">
+                <h4 class="text-black text-lg">C A R  E E R</h4>
+                <h1 class="text-cyan-600 text-3xl font-medium my-5">Looking for Job?</h1>
+                <h2 class="text-black text-3xl font font-medium italic">Find Your Dreamjob Work at <br> Biofarma</h2>
+                <p class="text-gray-500 my-5">
+                    In line with Bio Farma's vision and mission, Human Resource (HR) planning is oriented 
+                    towards achieving a balance of both quality and quantity in meeting current and future 
+                    human resources in accordance with the Company's business demands. For Bio Farma, HR is 
+                    an important and valuable asset in the Company.
+                </p>
+                <a href="#">
+                    <button class="bg-cyan-500 px-10 py-[10px] rounded-md text-white">Cari Pekerjaan</button>
+                </a>
+            </div>
+            <img src="image/lab.jpg" alt="">
+        </div>
+        <div class="my-[60px]">
+            <h1 class="text-center text-cyan-500 text-4xl font-medium mb-10">Laporan LHKPN</h1>
+            <div class="flex justify-around flex-col md:flex-row px-[50px]">
+                <div class="min-w-[45%]">
+                    <img class="w-[100%] rounded-lg shadow-lg" src="image/pengumunan.jpg" alt="">
+                    <h5 class="pt-5">Pengumuman Terbaru e-LHKPN</h5>
+                </div>
+                <div class="min-w-[45%]">
+                    <img class="w-[100%] rounded-lg shadow-2xl" src="image/pengaduan.jpg" alt="">
+                    <h5 class="pt-5">LAPOR! Layanan Aspirasi Dan Pengaduan Online Rakyat</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="background-image:url(https://www.biofarma.co.id/bundle/default/images/media/bg-footer.png);">
+        <div class="flex flex-col sm:flex-col md:flex-row justify-around text-white pt-16">
+            <div>
+                <img class="w-[300px]" src="image/logofooter.png" alt="">
+                <div class="mt-[100px]">
+                    <h6>Call Center</h6>
+                    <h3 class="text-4xl">1500810</h3>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-bold text-2xl mt-5">Head Office</h3>
+                <a href="#">Jl. Pasteur No.28, Bandung 40161, <br> Jawa Barat Indonesia</a><br>
+                <a href="#">+62 22-2033755</a><br>
+                <a href="#">+62 22 - 2041306</a><br>
+                <a href="#">mail@biofarma.co.id</a>
+
+                <h3 class="font-bold text-2xl mt-5">Breeding Facility Bio Farma</h3>
+                <a href="#">Jl. Kolonel Masturi Kav 10. Desa <br>Kertawangi kec. Cisarua Jawa Barat</a>
+            </div>
+            <div>
+                <h3 class="font-bold text-2xl mt-5">Bio Farma Representative Office</h3>
+                <a href="#">Gd. Pakarti centre Lantai 7 <br>Jln. Tanah Abang 3 no.23-27 <br>Jakarta Pusat</a>
+                <a href="#">Digital Healthcare Office Jakarta Lt.26 <br>Equity Tower Sudirman Central Business District (SCBD) Lot 9 <br> Jl. Jend. Sudirman Kav. 52-53 <br>Jakarta Selatan 12190, Indonesia</a>
+            </div>
+        </div>
+        <div class="border-t border-solid border-1 border-white w-[93%] ml-[3%] my-14"></div>
+        <div class="flex flex-col sm:flex-col md:flex-row justify-around text-white w-[75%]">
+            <div>
+                <h3 class="text-2xl font-bold">Information</h3>
+                <a href="#">Good Corporate Governance</a><br>
+                <a href="#">Our Procurement</a><br>
+                <a href="#">FAQ</a><br>
+                <a href="#">Vaccine Production</a><br>
+                <a href="#">Your Career</a><br>
+            </div>
+            <div class="mt-[5px]">
+                <a href="#">Contact Us</a><br>
+                <a href="#">E-PPID</a><br>
+                <a href="#">Announcement</a><br>
+                <a href="#"> I Want to</a><br>
+                <a href="#">News</a>br
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold">Quick Links</h3>
+                <a href="#">Porta; BUMN-Bio</a><br>
+                <a href="#">Kemenkes RI</a><br>
+            </div>
+        </div>
+    </footer>
+    <div>
+        <p class="text-center">Hak Cipta &copy 2023. Hak Cipta dilindungin. Bio Farma</p>
+    </div>
+</body>
+</html>

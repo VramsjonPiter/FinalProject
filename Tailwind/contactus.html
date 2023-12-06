@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Kontak Kami</title>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-cover shadow-md fixed top-0 left-0 right-0">
+        <div class="flex sm:flex-row md:flex-row bg-cyan-500 py-2">
+            <span class="text-white font-bold mx-5">follow us</span>
+            <span><img class="w-5 mr-2" src="image/fac.png" alt=""></span>
+            <span><img class="w-5 mr-2" src="image/twit.png" alt=""></span>
+            <span><img class="w-5 mr-2" src="image/ig.png" alt=""></span>
+            <span><img class="w-5 mr-2" src="image/in.png" alt=""></span>
+            <span><img class="w-5 mr-2" src="image/yt.png" alt=""></span>
+            <span><img class="w-5 mr-2" src="image/tik2.png" alt=""></span>
+        </div>
+        <nav class="flex bg-white px-20">
+            <div class="flex">
+                <img class="w-28 h-[60px]" src="image/biofarma.png" alt="">
+                <img class="w-[60px] h-[60px]" src="image/biofarma2.png" alt="">
+            </div>
+            <div class="mx-[130px] text-slate-600">
+                <div class="lg:hidden">
+                    <!-- Mobile Menu Toggle Button -->
+                    <button id="menuToggle" class="text-xl focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            
+                <ul id="menu" class="hidden lg:flex list-none items-center py-5 font-bold">
+                    <li class="mr-6"><a href="index.html">Home</a></li>
+                    <li class="mr-6"><a href="biodata.html">Biodata</a></li>
+                    <li class="mr-6"><a href="#">WiseWord</a></li>
+                    <li class="mr-6"><a href="https://fti.unai.edu/"> FTI UNAI</a></li>
+                    <li><a href="https://unai.edu/">UNAI</a></li>
+                </ul>
+            
+                <script>
+                    // JavaScript to handle the toggle functionality
+                    const menuToggle = document.getElementById('menuToggle');
+                    const menu = document.getElementById('menu');
+            
+                    menuToggle.addEventListener('click', () => {
+                        menu.classList.toggle('hidden');
+                    });
+                </script>
+            </div>
+            <!-- <div class="mx-[130px] text-slate-600">
+                <ul class="flex list-none items-center py-5 font-bold">
+                    <li class="mr-6"><a href="#">Biodata</a></li>
+                    <li class="mr-6"><a href="#">Contact Us</a></li>
+                    <li class="mr-6"><a href="#">WiseWord</a></li>
+                    <li class="mr-6"><a href="https://fti.unai.edu/"> FTI UNAI</a></li>
+                    <li><a href="https://unai.edu/">UNAI</a></li>
+                </ul>
+            </div> -->
+        </nav>
+    </header>
+
+    <div class="container mx-auto p-8 bg-white shadow-lg rounded-md mt-10">
+        <h1 class="text-3xl font-bold mb-8 text-gray-800">Kontak Kami</h1>
+
+        <form action="#" method="post" class="max-w-md mx-auto">
+            <!-- Nama Lengkap -->
+            <div class="mb-4">
+                <label for="fullname" class="block text-gray-600 text-sm font-semibold mb-2">Nama Lengkap</label>
+                <input type="text" id="fullname" name="fullname" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-4">
+                <label for="email" class="block text-gray-600 text-sm font-semibold mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+            </div>
+
+            <!-- User Name -->
+            <div class="mb-4">
+                <label for="username" class="block text-gray-600 text-sm font-semibold mb-2">User Name</label>
+                <input type="text" id="username" name="username" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+            </div>
+
+            <!-- Password -->
+            <div class="mb-4">
+                <label for="password" class="block text-gray-600 text-sm font-semibold mb-2">Password</label>
+                <input type="password" id="password" name="password" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+            </div>
+
+            <!-- Gender -->
+            <div class="mb-4">
+                <span class="block text-gray-600 text-sm font-semibold mb-2">Gender</span>
+                <label class="inline-flex items-center">
+                    <input type="radio" class="form-radio" name="gender" value="male">
+                    <span class="ml-2">Male</span>
+                </label>
+                <label class="inline-flex items-center ml-6">
+                    <input type="radio" class="form-radio" name="gender" value="female">
+                    <span class="ml-2">Female</span>
+                </label>
+            </div>
+
+            <!-- Religion -->
+            <div class="mb-4">
+                <label for="religion" class="block text-gray-600 text-sm font-semibold mb-2">Religion</label>
+                <select id="religion" name="religion" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+                    <option value="islam">Islam</option>
+                    <option value="christianity">Christianity</option>
+                    <option value="hinduism">Hinduism</option>
+                    <option value="buddhism">Buddhism</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Address -->
+            <div class="mb-4">
+                <label for="address" class="block text-gray-600 text-sm font-semibold mb-2">Address</label>
+                <textarea id="address" name="address" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"></textarea>
+            </div>
+
+            <!-- Hobby -->
+            <div class="mb-4">
+                <span class="block text-gray-600 text-sm font-semibold mb-2">Hobby</span>
+                <label class="inline-flex items-center">
+                    <input type="checkbox" class="form-checkbox" name="hobby[]" value="reading">
+                    <span class="ml-2">Reading</span>
+                </label>
+                <label class="inline-flex items-center ml-6">
+                    <input type="checkbox" class="form-checkbox" name="hobby[]" value="traveling">
+                    <span class="ml-2">Traveling</span>
+                </label>
+                <label class="inline-flex items-center ml-6">
+                    <input type="checkbox" class="form-checkbox" name="hobby[]" value="cooking">
+                    <span class="ml-2">Cooking</span>
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Submit</button>
+            </div>
+        </form>
+    </div>
+    <footer style="background-image:url(https://www.biofarma.co.id/bundle/default/images/media/bg-footer.png);">
+        <div class="flex flex-col sm:flex-col md:flex-row justify-around text-white pt-16">
+            <div>
+                <img class="w-[300px]" src="image/logofooter.png" alt="">
+                <div class="mt-[100px]">
+                    <h6>Call Center</h6>
+                    <h3 class="text-4xl">1500810</h3>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-bold text-2xl mt-5">Head Office</h3>
+                <a href="#">Jl. Pasteur No.28, Bandung 40161, <br> Jawa Barat Indonesia</a><br>
+                <a href="#">+62 22-2033755</a><br>
+                <a href="#">+62 22 - 2041306</a><br>
+                <a href="#">mail@biofarma.co.id</a>
+
+                <h3 class="font-bold text-2xl mt-5">Breeding Facility Bio Farma</h3>
+                <a href="#">Jl. Kolonel Masturi Kav 10. Desa <br>Kertawangi kec. Cisarua Jawa Barat</a>
+            </div>
+            <div>
+                <h3 class="font-bold text-2xl mt-5">Bio Farma Representative Office</h3>
+                <a href="#">Gd. Pakarti centre Lantai 7 <br>Jln. Tanah Abang 3 no.23-27 <br>Jakarta Pusat</a>
+                <a href="#">Digital Healthcare Office Jakarta Lt.26 <br>Equity Tower Sudirman Central Business District (SCBD) Lot 9 <br> Jl. Jend. Sudirman Kav. 52-53 <br>Jakarta Selatan 12190, Indonesia</a>
+            </div>
+        </div>
+        <div class="border-t border-solid border-1 border-white w-[93%] ml-[3%] my-14"></div>
+        <div class="flex flex-col sm:flex-col md:flex-row justify-around text-white w-[75%]">
+            <div>
+                <h3 class="text-2xl font-bold">Information</h3>
+                <a href="#">Good Corporate Governance</a><br>
+                <a href="#">Our Procurement</a><br>
+                <a href="#">FAQ</a><br>
+                <a href="#">Vaccine Production</a><br>
+                <a href="#">Your Career</a><br>
+            </div>
+            <div class="mt-[5px]">
+                <a href="#">Contact Us</a><br>
+                <a href="#">E-PPID</a><br>
+                <a href="#">Announcement</a><br>
+                <a href="#"> I Want to</a><br>
+                <a href="#">News</a>br
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold">Quick Links</h3>
+                <a href="#">Porta; BUMN-Bio</a><br>
+                <a href="#">Kemenkes RI</a><br>
+            </div>
+        </div>
+    </footer>
+    <div>
+        <p class="text-center">Hak Cipta &copy 2023. Hak Cipta dilindungin. Bio Farma</p>
+    </div>
+
+</body>
+</html>
